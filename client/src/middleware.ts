@@ -13,7 +13,7 @@ export default clerkMiddleware(async (auth, req) => {
   const { sessionClaims } = await auth();
   const userId = sessionClaims?.sub;
 
-  // Check if userId is valid
+  // Check if userId is validnpm 
   if (!userId) {
     // Handle the case where the user is not signed in
     console.log("User is not signed in.");
